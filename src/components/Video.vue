@@ -87,7 +87,7 @@
   import BScroll from 'better-scroll'
   import {filterCustomDate} from '../public/js/tool'
   export default {
-    mounted() {
+    created() {
       this.$nextTick(() => {
         this.otherScroll = new BScroll(this.$refs.other, {
           click: true
@@ -217,14 +217,16 @@
             font-weight: bold
           .play
             display: inline-block
-            margin: 12px 8px 0 0
-            width: 32%
-            &:nth-child(4), &:last-child
-              margin-right: 0
+            margin-top: 12px
+            padding-right: 5px
+            width: 50%
+            box-sizing: border-box
+            &:nth-child(2n-1)
+              padding-left: 5px
+              padding-right: 0px
             .playPic
               position: relative
-              width: 127px
-              min-width: 115px
+              width: 100%
               height: 184px
               .playScore
                 position: absolute

@@ -3,31 +3,31 @@
     <router-view/>
     <div class="tab">
       <div class="tab-item">
-        <router-link to="/index/first">
+        <router-link to="/first">
           <span class="index"></span>
           <span class="text">首页</span>
         </router-link>
       </div>
       <div class="tab-item">
-        <router-link to="/index/sports">
+        <router-link to="/sports">
           <span class="sports"></span>
           <span class="text">体育</span>
         </router-link>
       </div>
       <div class="tab-item">
-        <router-link to="/index/vip">
+        <router-link to="/vip">
           <span class="vip"></span>
           <span class="text">VIP</span>
         </router-link>
       </div>
       <div class="tab-item">
-        <router-link to="/index/live">
+        <router-link to="/live">
           <span class="live"></span>
           <span class="text">直播</span>
         </router-link>
       </div>
       <div class="tab-item">
-        <router-link to="/index/mine">
+        <router-link to="/mine">
           <span class="mine"></span>
           <span class="text">我的</span>
         </router-link>

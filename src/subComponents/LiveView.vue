@@ -9,7 +9,7 @@
         </ul>
       </div>
       <div class="l-right" ref="list">
-        <ul>
+        <ul v-if="!isLoad">
           <li class="list" v-for="(list, index) in liveData[nameIndex].dataList" :key="index">
             <img class="pic" :src="list.pic">
             <div class="data">
@@ -34,14 +34,15 @@
           res = res.data
             if (res.errno === 0) {
               this.liveData = res.data
-              console.log(this.liveData.dataList)
+              this.isLoad = false
             }
         })
     },
     data() {
       return {
         liveData: [],
-        nameIndex: 0
+        nameIndex: 0,
+        isLoad: true
       }
     },
     watch: {

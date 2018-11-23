@@ -6,7 +6,7 @@
       <div class="content">
         <banner :dataCode="sports.banner"></banner>
         <icon :dataCode="sports"></icon>
-        <video-lis :dataCode="sports.film"></video-lis>
+        <video-list :dataCode="sports.film"></video-list>
         <div class="footer">终于让你发现了我的底线</div>
       </div>
     </div>
@@ -16,7 +16,7 @@
 
 <script>
   import BScroll from 'better-scroll'
-  import {Search, NavigationBar, Banner, Icon, VideoLis} from '../widget/index'
+  import {Search, NavigationBar, Banner, Icon, VideoList} from '../widget/index'
   export default {
     created() {
       this.axios('/api/sports')
@@ -44,7 +44,7 @@
       Banner,
       Icon,
       NavigationBar,
-      VideoLis
+      VideoList
     }
   }
 </script>

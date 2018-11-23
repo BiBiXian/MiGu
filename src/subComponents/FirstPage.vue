@@ -19,7 +19,7 @@
             </transition-group>
           </div>
         </div>
-        <video-lis :dataCode="firstCode.film"></video-lis>
+        <video-list :dataCode="firstCode.film"></video-list>
         <div class="footer">终于让你发现了我的底线</div>
       </div>
     </div>
@@ -29,7 +29,7 @@
 
 <script>
   import BScroll from 'better-scroll'
-  import {Search, NavigationBar, Banner, Icon, VideoLis} from '../widget/index'
+  import {Search, NavigationBar, Banner, Icon, VideoList} from '../widget/index'
   export default {
     created() {
       this.axios('/api/firstCode')
@@ -64,7 +64,7 @@
       NavigationBar,
       Banner,
       Icon,
-      VideoLis
+      VideoList
     }
   }
 </script>

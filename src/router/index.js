@@ -13,14 +13,14 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/index',
+      path: '/',
       component: IndexView,
       children: [
-      {path: '/index/first', component: FirstPage},
-      {path: '/index/sports', component: SportsView},
-      {path: '/index/vip', component: VipView},
-      {path: '/index/live', component: LiveView},
-      {path: '/index/mine', component: MineView}
+      {path: '/first', component: FirstPage},
+      {path: '/sports', component: SportsView},
+      {path: '/vip', component: VipView},
+      {path: '/live', component: LiveView},
+      {path: '/mine', component: MineView}
     ]},
     {path: '/video', name: 'Video', component: Video}
   ],

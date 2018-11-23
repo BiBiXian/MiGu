@@ -20,4 +20,4 @@ new Vue({
   template: '<App/>'
 })
 
-router.push('/index/first')
+router.push('/first')

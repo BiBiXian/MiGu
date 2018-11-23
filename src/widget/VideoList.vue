@@ -97,8 +97,14 @@
           .name
             padding: 6px 0 9px 12px
             font-size: 14px
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
           .description
             padding-left: 12px
             font-size: 10px
             color: #ABABAB
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
 </style>

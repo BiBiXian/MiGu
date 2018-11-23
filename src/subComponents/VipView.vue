@@ -29,7 +29,7 @@
             </transition-group>
           </div>
         </div>
-        <video-lis :dataCode="vipData.film"></video-lis>
+        <video-list :dataCode="vipData.film"></video-list>
         <div class="footer">终于让你发现了我的底线</div>
       </div>
     </div>
@@ -38,7 +38,7 @@
 
 <script>
   import BScroll from 'better-scroll'
-  import {Banner, NavigationBar, VideoLis} from '../widget/index'
+  import {Banner, NavigationBar, VideoList} from '../widget'
     export default {
     created() {
       this.axios('/api/vipData')
@@ -71,7 +71,7 @@
     components: {
       NavigationBar,
       Banner,
-      VideoLis
+      VideoList
     }
   }
 </script>
